@@ -1,0 +1,143 @@
+site_name: "PyQt5 Random Sampling App - Complete Guide"
+site_description: "A comprehensive guide to building a professional PyQt5 application for random sampling"
+site_author: "Your Name"
+site_url: "https://chandersheel.github.io/random-sampling-app-book/"
+
+# Repository information
+repo_name: "chandersheel/random-sampling-app-book"
+repo_url: "https://github.com/chandersheel/random-sampling-app-book"
+edit_uri: "edit/main/docs/"
+
+# Theme configuration
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+    - content.action.view
+    - toc.follow
+    - toc.integrate
+  
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+    
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Introduction: chapter_01_introduction.md
+    - PyQt5 Fundamentals: chapter_02_pyqt5_fundamentals.md
+    - Application Architecture: chapter_03_architecture.md
+  - Building the App:
+    - Main Window: chapter_04_main_window.md
+    - File Handling: chapter_05_file_handling.md
+    - UI Elements: chapter_06_ui_elements.md
+    - Advanced Styling: chapter_07_styling.md
+  - Core Features:
+    - Data Processing: chapter_08_data_processing.md
+    - Table Management: chapter_09_table_management.md
+    - Navigation: chapter_10_navigation.md
+  - Advanced Topics:
+    - Error Handling: chapter_11_error_handling.md
+    - Testing & Deployment: chapter_12_testing_deployment.md
+  - Reference:
+    - Complete Source Code: appendix_a_source_code.md
+    - PyQt5 Reference: appendix_b_pyqt5_reference.md
+
+# Markdown extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: Page Contents
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:pymdownx.emoji.gemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/chandersheel
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/chandersheeel
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/chandersheel-pahel-7b7a48104
+
+# Copyright
+copyright: Copyright &copy; 2025 Your Name
